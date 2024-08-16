@@ -5,7 +5,7 @@ import * as React from "react";
 
 export default function NextThemeProvider({ children }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       {children}
     </ThemeProvider>
   );
