@@ -22,111 +22,115 @@ const Sidebar = () => {
     <Box
       flex={1}
       p={2}
-      sx={{ display: { xs: "none", sm: "block" } }}
+      sx={{
+        display: { xs: "none", sm: "block" },
+      }}
       component={Paper}
     >
-      <List>
-        <ListItem>
-          <ListItemButton component="a" href="#Home">
-            <ListItemIcon>
-              <MdAddHome size={30} />
-            </ListItemIcon>
-            <Typography
-              variant="body1"
-              sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
-            >
-              Home page
-            </Typography>
-          </ListItemButton>
-        </ListItem>
+      <Box position={"fixed"}>
+        <List>
+          <ListItem>
+            <ListItemButton component="a" href="#Home">
+              <ListItemIcon>
+                <MdAddHome size={30} />
+              </ListItemIcon>
+              <Typography
+                variant="body1"
+                sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
+              >
+                Home page
+              </Typography>
+            </ListItemButton>
+          </ListItem>
 
-        <ListItem>
-          <ListItemButton component="a" href="#Home">
-            <ListItemIcon>
-              <RiPagesLine size={30} />
-            </ListItemIcon>
-            <Typography
-              variant="body1"
-              sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
-            >
-              Pages
-            </Typography>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton component="a" href="#Home">
-            <ListItemIcon>
-              <MdOutlineGroups3 size={30} />
-            </ListItemIcon>
-            <Typography
-              variant="body1"
-              sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
-            >
-              Groups
-            </Typography>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton component="a" href="#Home">
-            <ListItemIcon>
-              <SiMarketo size={30} />
-            </ListItemIcon>
-            <Typography
-              variant="body1"
-              sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
-            >
-              Marketplace
-            </Typography>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton component="a" href="#Home">
-            <ListItemIcon>
-              <FaUserFriends size={30} />
-            </ListItemIcon>
-            <Typography
-              variant="body1"
-              sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
-            >
-              Friends
-            </Typography>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton component="a" href="#Home">
-            <ListItemIcon>
-              <IoSettingsOutline size={30} />
-            </ListItemIcon>
-            <Typography
-              variant="body1"
-              sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
-            >
-              Settings
-            </Typography>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton component="a" href="#Home">
-            <ListItemIcon>
-              <CgProfile size={30} />
-            </ListItemIcon>
-            <Typography
-              variant="body1"
-              sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
-            >
-              Profile
-            </Typography>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton component="a" href="#Home">
-            <ListItemIcon>
-              <LuMoonStar size={30} />
-            </ListItemIcon>
-            <Switch />
-          </ListItemButton>
-        </ListItem>
-      </List>
+          <ListItem>
+            <ListItemButton component="a" href="#Home">
+              <ListItemIcon>
+                <RiPagesLine size={30} />
+              </ListItemIcon>
+              <Typography
+                variant="body1"
+                sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
+              >
+                Pages
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem>
+            <ListItemButton component="a" href="#Home">
+              <ListItemIcon>
+                <MdOutlineGroups3 size={30} />
+              </ListItemIcon>
+              <Typography
+                variant="body1"
+                sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
+              >
+                Groups
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem>
+            <ListItemButton component="a" href="#Home">
+              <ListItemIcon>
+                <SiMarketo size={30} />
+              </ListItemIcon>
+              <Typography
+                variant="body1"
+                sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
+              >
+                Marketplace
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem>
+            <ListItemButton component="a" href="#Home">
+              <ListItemIcon>
+                <FaUserFriends size={30} />
+              </ListItemIcon>
+              <Typography
+                variant="body1"
+                sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
+              >
+                Friends
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem>
+            <ListItemButton component="a" href="#Home">
+              <ListItemIcon>
+                <IoSettingsOutline size={30} />
+              </ListItemIcon>
+              <Typography
+                variant="body1"
+                sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
+              >
+                Settings
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem>
+            <ListItemButton component="a" href="#Home">
+              <ListItemIcon>
+                <CgProfile size={30} />
+              </ListItemIcon>
+              <Typography
+                variant="body1"
+                sx={{ fontSize: "1.25rem", fontWeight: "bold" }}
+              >
+                Profile
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem>
+            <ListItemButton component="a" href="#Home">
+              <ListItemIcon>
+                <LuMoonStar size={30} />
+              </ListItemIcon>
+              <Switch />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Box>
     </Box>
   );
 };

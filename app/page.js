@@ -4,6 +4,7 @@ import {
   Sidebar,
   Rightbar,
   Navbar,
+  AddConversion,
 } from "../components/custom-component";
 import { Box, Stack } from "@mui/material";
 
@@ -16,6 +17,7 @@ const Home = () => {
         <Feed />
         <Rightbar />
       </Stack>
+      <AddConversion />
     </Box>
   );
 };
